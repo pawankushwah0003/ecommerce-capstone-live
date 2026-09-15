@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Capstone App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>StoreFront Capstone</h1>
+        <div class="user-controls">
+            <span id="user-status">Logged out</span>
+            <button id="auth-btn">Login</button>
+            <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <select id="category-select">
+                <option value="all">All Categories</option>
+            </select>
+        </section>
+
+        <section id="product-container" class="grid">
+            <p>Loading products...</p>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
